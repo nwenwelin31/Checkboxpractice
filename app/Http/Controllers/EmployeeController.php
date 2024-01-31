@@ -44,7 +44,6 @@ class EmployeeController extends Controller
         ]);
         $employee=new Employee();
         $employee->name=$request->name;
-        $checkboxData=array();
         $checkboxData = $request->input('skill', []); // Use 'skill' as the input name
         $employee->skill = implode(',', $checkboxData);
         $employee->gender=$request->gender;
