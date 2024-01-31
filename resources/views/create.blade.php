@@ -14,7 +14,7 @@
       <div class="form-check-inline">
         Skill
         <label class="form-check-label" for="check1">
-          <input type="checkbox" class="form-check-input" id="php" name="skill[]" value="php" checked>PHP
+          <input type="checkbox" class="form-check-input" id="php" name="skill[]" value="php">PHP
         </label>
       </div>
       <div class="form-check-inline">
