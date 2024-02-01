@@ -45,9 +45,10 @@ class EmployeeController extends Controller
         $employee=new Employee();
         $employee->name=$request->name;
         $checkboxData = $request->input('skill', []); // Use 'skill' as the input name
-        $employee->skill = implode(',', $checkboxData);
+        $employee->skill = implode(', ', $checkboxData);
         $employee->gender=$request->gender;
         $employee->save();
+
     }
 
     /**
@@ -58,7 +59,8 @@ class EmployeeController extends Controller
      */
     public function show(Employee $employee)
     {
-        //
+        $employees=Employee::all();
+        return view('show',compact('employees'));
     }
 
     /**

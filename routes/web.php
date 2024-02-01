@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/create',[EmployeeController::class,'create']);
 Route::post('/store',[EmployeeController::class,'store'])->name('store');
+Route::get('/show',[EmployeeController::class,'show']);
