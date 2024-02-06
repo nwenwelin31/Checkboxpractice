@@ -21,8 +21,6 @@
             <td>{{ $employee->gender }}</td>
           </tr>
           @endforeach
-
-
         </tbody>
       </table>
   </div>
