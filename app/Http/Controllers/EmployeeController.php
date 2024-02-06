@@ -49,7 +49,7 @@ class EmployeeController extends Controller
         $employee->skill = implode(', ', $checkboxData);
         $employee->gender=$request->gender;
         $employee->save();
-
+        return redirect()->route('employee.index');
     }
 
     /**
